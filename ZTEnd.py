@@ -12,7 +12,7 @@ def descobrir_gateways():
     
     if sistema == "Windows":
         comando = "route print 0.0.0.0"
-    else:  # Supondo que seja um sistema Unix-like
+    else:  # Supondo que seja um sistema Linux
         comando = "ip route show default"
 
     gateways = []
